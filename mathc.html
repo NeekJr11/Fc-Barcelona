@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="info.css">
+    <title>Матчи</title>
+ </head>
+ <body>
+    <h2 class="result1">Результаты матчей</h2>
+    <div class="container22">
+        <div class="item22">Суббота 30 ноября</div>
+        <div class="item22">FC Barcelona
+            </div>
+        <div  class="item22"> <img src="img/BCN.png" alt="">1</div>
+        <div class="item22"> 2<img src="img/LPA.png" alt=""></div>
+        <div class="item22">Las Palmas</div>
+    </div>
+    <div class="containfooter22">
+        <div class="leftfooter22"></div>
+        <div class="rightfooter22"></div>
+      </div>
+    <div style="color: rgb(12, 158, 12);" class="container22" >
+        <div class="item22">Вторник 26 ноября</div>
+        <div class="item22">FC Barcelona</div>
+        <div  class="item22"> <img src="img/BCN.png" alt="">3</div>
+        <div class="item22"> 0<img src="img/BRS.png" alt=""></div>
+        <div class="item22">Brest</div>
+    </div>
+    <div class="containfooter22">
+        <div class="leftfooter22"></div>
+        <div class="rightfooter22"></div>
+      </div>
+      <div style="color: rgb(34, 34, 34);" class="container22">
+        <div class="item22">Суббота 23 ноября</div>
+        <div class="item22">Celta de Figo</div>
+        <div  class="item22"> <img src="img/CLV.png" alt="">2</div>
+        <div class="item22"> 2<img src="img/BCN.png" alt=""></div>
+        <div class="item22">Fc Barcelona</div>
+    </div>
+    <div class="containfooter22">
+        <div class="leftfooter22"></div>
+        <div class="rightfooter22"></div>
+      </div>
+      <div style="color:red" class="container22">
+        <div class="item22">Воскресенье  10 ноября</div>
+        <div class="item22">Real Sociedad</div>
+        <div  class="item22"> <img src="img/RSO.png" alt="">1</div>
+        <div class="item22"> 0<img src="img/BCN.png" alt=""></div>
+        <div class="item22">Fc Barcelona</div>
+    </div>
+    <div class="containfooter22">
+        <div class="leftfooter22"></div>
+        <div class="rightfooter22"></div>
+      </div>
+      <div style="color: rgb(12, 158, 12);" class="container22" >
+        <div class="item22">Среда 6 ноября</div>
+        <div class="item22">Crevna Zvezda</div>
+        <div  class="item22"> <img src="img/CZV.png" alt="">2</div>
+        <div class="item22"> 5<img src="img/BCN.png" alt=""></div>
+        <div class="item22">Fc barcelona</div>
+    </div>
+    <h1 style="margin-left: 120px;color: yellow;">До следущего матча осталось:</h1>
+    <div class="countdown" id="countdown"></div>
+    
+
+    <script>
+        const countdownDate = new Date("Dec 3, 2024 21:00:00").getTime();
+
+        const x = setInterval(function() {
+
+            const now = new Date().getTime();
+
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "д " + hours + "ч "
+            + minutes + "м " + seconds + "с ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Матч начался!";
+            }
+        }, 1000);
+    </script>
+    <div style="color:blue;" class="container22" >
+        <div class="item22">Вторник 3 декабря <br>21:00</div>
+        <div class="item22">Mallorca</div>
+        <div  class="item22"> <img src="img/MLL.png" alt=""></div>
+        <div class="item22"> <img src="img/BCN.png" alt=""></div>
+        <div class="item22">Fc barcelona</div>
+    </div>
+    <div class="containfooter">
+        <div class="leftfooter"></div>
+  <img class="imgcontain" src="img/logo.png " alt="">
+        <div class="rightfooter"></div>
+      </div>
+    <div class="end">
+        <h2>FC BARCELONA</h2>
+      </div>
+      <p class="endcopy">© Copyright FC Barcelona Official website of FC Barcelona</p>
+ </body>
+ </html>

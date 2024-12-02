@@ -1,0 +1,50 @@
+body{
+    background: -webkit-linear-gradient(90deg, #291d53,#35052a,#5a1e2d);
+    background: linear-gradient(90deg, #291d53,#2e1127,#5a1e2d);
+
+}
+h1 {
+    color: #333;
+    text-align: center;
+    background: linear-gradient(270deg,  #0099d2, #cd1773);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 6s ease infinite;
+    font-size: 80px;
+    color: white;
+    background-color: #700718;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.laliga{
+    display: flex;
+    justify-content: center;
+}
+.laligaimg{
+    width: 60%;
+}
+.info{
+    background-color: white;
+    width: 59%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 300px;
+    margin-left: 372px;
+}
+.la23{
+    width: 70%;
+}
+.text{
+    text-align: center;
+    font-size: 20px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

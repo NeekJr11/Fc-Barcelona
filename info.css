@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(90deg, #291d53,#4d1740,#5a1e2d);
+    background: linear-gradient(90deg, #291d53,#4d1740,#5a1e2d);
+  }
+  h1 {
+    color:rgb(252, 252, 87);
+    text-align: center;
+}
+main{
+    background: linear-gradient(90deg, #291d53,#4d1740,#5a1e2d);
+
+}
+.name{
+    text-align: center;
+    color: yellow;
+}
+.text1 {
+    position: absolute;
+    top: 50%; /* Позиция текста по вертикали */
+    left: 50%; /* Позиция текста по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование текста */
+    color:white;
+    font-size: 29px; /* Размер шрифта */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для текста */
+    padding-top: 70px;
+}
+.image-container img {
+    margin-bottom: 10px; /* Отступ между изображениями */
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    width: 100%; /* Ширина основного контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    width: 1500px;
+}
+.subcontainer {
+    flex: 1; /* Каждый подконтейнер занимает равное пространство */
+    margin: 10px; /* Отступы между подконтейнерами */
+    position: relative; /* Для позиционирования текста */
+    overflow: hidden; /* Скрывает переполнение */
+    width: 400px;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.subcontainer img {
+    width: 100%; /* Изображение занимает всю ширину подконтейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+.text-overlay {
+    position: absolute; /* Абсолютное позиционирование текста */
+    bottom: 10px; /* Отступ от нижней границы */
+    left: 120px; /* Отступ от левой границы */
+    color: white; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.main-container2 {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    width: 100%; /* Ширина основного контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    width: 1200px;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 40px;
+  }
+  .endcopy{
+    display: flex;
+    color:white;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .leftfooter {
+    background: linear-gradient(90deg, #371e92,#4d1740,#5a1e2d);
+  flex: 1;
+}
+.rightfooter {
+  background: linear-gradient(270deg, #4d1740, #075470, #e2181869);
+  flex: 1;
+}  
+.containfooter {
+    display: flex;
+    height: 100px; /* Высота контейнера */
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px
+  }
+  a{
+    text-decoration: none;
+    color: yellow;
+}
+.result1{
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    margin-left: 120px;
+}
+.container22 {
+    display: flex; /* Используем flexbox для размещения элементов в строку */
+    justify-content: space-between; /* Распределяем элементы по всей ширине контейнера */
+    padding: 1%;
+    background-color: white;
+    color: red;
+    font-size: 25px;
+    padding: 0;
+    padding-right:100px;
+}
+.item22 {
+    flex: 1; /* Элементы занимают равное пространство */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 22px;
+    margin-right: 100px;
+}
+.leftfooter22 {
+    background: linear-gradient(90deg, #371e92,#4d1740,#5a1e2d);
+  flex: 1;
+}
+.rightfooter22 {
+  background: linear-gradient(270deg, #4d1740, #075470, #e2181869);
+  flex: 1;
+}  
+.containfooter22 {
+    display: flex;
+    height: 10px; /* Высота контейнера */
+    position: relative;
+    margin-bottom: 5px;
+  }
+  .countdown {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+    color: yellow;
+    margin-left: 120px;
+}
+.subcontainer img {
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Плавный переход */
+  }
+  
+  .subcontainer:hover img {
+    transform: scale(1.1); /* Увеличение изображения */
+    filter: brightness(70%); /* Затемнение изображения */
+  }
